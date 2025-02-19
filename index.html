@@ -11,7 +11,7 @@
       font-family: "Times New Roman", Georgia, Serif;
     } */
 
-    h1,
+    /* h1,
     h2,
     h3,
     h4,
@@ -19,7 +19,7 @@
     h6 {
       font-family: "Playfair Display";
       letter-spacing: 5px;
-    }
+    } */
   </style>
 </head>
 
@@ -31,9 +31,9 @@
       <a href="#home" class="w3-bar-item w3-button">Ta Minh Nhat</a>
       <!-- Right-sided navbar links. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
-        <a href="#project" class="w3-bar-item w3-button">Project</a>
-        <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#contact" class="w3-bar-item w3-button">Resume</a>
+        <a href="#project" class="w3-bar-item w3-button">Murin Project</a>
+        <a href="#other" class="w3-bar-item w3-button">Other Projects</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
       </div>
     </div>
   </div>
@@ -53,83 +53,110 @@
       </div>
 
       <div class="w3-col m6 w3-padding-large">
-        <h1 class="w3-center"></h1><br>
-        <h5 class="w3-center">MURIN</h5>
+        <h1 class="w3-center" style="vertical-align: top; font-weight: bold;">MURIN</h1>
         <p class="w3-large">It's name inspired by an isopod "murina cubaris"
           <img src="img/isopod.jpg" alt="Murina Cubaris Icon" style="width:30px; height:30px; vertical-align:middle;">
-          . It features a four-wheeled design modeled after Clearpath Robotics’ Jackal.</p>
+          . Murin is a customizable mobile robotic platform, designed to accelerate robotics research.</p>
+        <h2 class="w3-center" style="font-weight: bold;">FEATURES</h2>
+          <ul>
+            <li>Powerd by ROS2, Nodejs and Websocket</li>
+            <li>Navigation using Intel Realsense and lidar</li>
+            <li>Support Omni-directional drive and differential drive</li>
+            <li>Rich in user interface: dashboard, game controller, WebSocket API</li>
+          </ul>
+          <a href="https://github.com/taminhnhat/Mobile-Robot-App" target="_blank">Murin API
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Gmail" style="width: 24px; height: 24px; margin: 0 10px;">
+          </a>
+          <a href="https://github.com/taminhnhat/murin" target="_blank">Murin ROS2
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Gmail" style="width: 24px; height: 24px; margin: 0 10px;">
+          </a>
       </div>
+
     </div>
 
     <div class="w3-row w3-padding-64">  
       <div class="w3-col m6 w3-padding-large">
-        <h1 class="w3-center"></h1><br>
-        <h5 class="w3-center">MURIN</h5>
-        <p class="w3-large">It's name inspired by an isopod "murina cubaris". It features a four-wheeled design modeled after Clearpath Robotics’ Jackal.</p>
+        <h1 class="w3-center">TECH SPECS</h1>
+        <table style="border-collapse: collapse; width: 100%;">
+          <tr>
+              <td style="vertical-align: top; font-weight: bold;">MAX SPEED</td>
+              <td>1.5 m/s</td>
+          </tr>
+          <tr>
+              <td style="vertical-align: top; font-weight: bold;">MAX PAYLOAD</td>
+              <td>4 kg</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">POWER</td>
+            <td>207 Wh (4 hours at normal operation)
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">SENSOR</td>
+            <td>Bno085 9-dof Orientation IMU Fusion<br>
+              ld19 Lidar with 12m range<br>
+              Wattmeter monitoring power in real time<br>
+              Realsense D435 depth camera</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">USER INTERFACE</td>
+            <td>Dashboard (Powered by Nodejs and WebSocket)<br>
+                Manual Mode (gamepad support or onscreen controller)
+            </td>
+          </tr>
+        </table>
       </div>
 
       <div class="w3-col m6 w3-padding-large w3-hide-small">
-        <img src="img/murin.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+        <img src="img/cad.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
           height="750">
       </div>
     </div>
-
-    <hr>
-
-    <!-- About Section -->
-    <div class="w3-row w3-padding-64" id="menu">
-      <div class="w3-col l6 w3-padding-large">
-        <h1 class="w3-center">Our Menu</h1><br>
-        <h4>Bread Basket</h4>
-        <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-
-        <h4>Honey Almond Granola with Fruits</h4>
-        <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-
-        <h4>Belgian Waffle</h4>
-        <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-
-        <h4>Scrambled eggs</h4>
-        <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-
-        <h4>Blueberry Pancakes</h4>
-        <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-      </div>
-
-      <div class="w3-col l6 w3-padding-large">
-        <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-      </div>
+    <div class="w3-row w3-padding-64">
+      <img src="img/cad_dim.png" style="width:100%; height:auto;">
     </div>
 
     <hr>
 
-    <!-- Resume Section -->
-    <div class="w3-container w3-padding-64" id="contact">
-      <h1>Contact</h1><br>
-      <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the
-        food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
-      <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
-      <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message
-        here:</p>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
-        <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date"
-            value="2020-11-16T20:00"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required
-            name="Message"></p>
-        <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
-      </form>
+    <!-- Other Section -->
+    <div class="w3-row w3-padding-64" id="other">
+      <h1 class="w3-center" style="font-weight: bold;">OTHER PROJECTS</h1>
+      <table style="border-collapse: collapse; width: 100%; text-align: center;">
+        <tr>
+            <td style="width: 30%;">
+              <img src="img/airbrush.jpg" alt="Image 1" style="width: 100%; height: auto;"><br>
+              <p style="text-align: left;">C++, Windows Forms, Kinematics</p>
+              <p style="font-weight: bold;">Airbrushing robot, An use case of Delta Robot Mechanism <a href="https://www.youtube.com/shorts/L19EwEvePbw" target="_blank" style="font-weight:normal;">Youtube</a></p>
+            </td>
+            <td style="width: 30%;">
+              <img src="img/picktolight.png" alt="Image 2" style="width: 100%; height: auto;">
+              <p style="text-align: left;">Nodejs, MongoDB, C++, WebSocket</p>
+              <p style="font-weight: bold;">Picktolight System for Warehouse and Fullfillment Center <a href="https://www.youtube.com/shorts/9YbHJZBgn50" target="_blank" style="font-weight:normal;">Youtube</a></p>
+            </td>
+            <td style="width: 30%;">
+              <img src="img/3d_printer.png" alt="Image 3" style="width: 100%; height: auto;">
+              <p style="text-align: left;">C++</p>
+              <p style="font-weight: bold;">DIY 3D Printer based on Marlin Firmware <a href="https://youtube.com/shorts/D0enfya2FR4" target="_blank" style="font-weight:normal;">Youtube</a></p>
+            </td>
+        </tr>
+    </table>
+    
     </div>
-
     <!-- End page content -->
   </div>
 
   <!-- Footer -->
-  <footer class="w3-center w3-light-grey w3-padding-32">
-    <a class="w3-bar-item w3-left">taminhnhat98@gmail.com</a>
-    <a class="w3-bar-item">linkedin.com/in/taminhnhat</a>
-    <a class="w3-bar-item w3-right">github.com/taminhnhat/</a>
+  <footer class="w3-center w3-light-grey w3-padding-32" id="contact">
+    <a class="w3-left" style="margin-left: 10%;">taminhnhat98@gmail.com</a>
+    <a href="https://github.com/taminhnhat" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 24px; height: 24px; margin: 0 10px;">
+    </a>
+    <a href="https://www.linkedin.com/in/taminhnhat" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 24px; height: 24px; margin: 0 10px;">
+    </a>
+    <a href="mailto:taminhnhat98@gmail.com">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" style="width: 24px; height: 24px; margin: 0 10px;">
+    </a>
   </footer>
 
 </body>
